@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>João Vitor - Meu Site Pessoal</title>
+    <style>
+        /* Resetando algumas configurações padrões */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Corpo e fundo */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #121212;
+            color: #f4f4f4;
+            line-height: 1.8;
+            margin: 0;
+        }
+
+        /* Estilos do cabeçalho */
+        header {
+            background-color: #333;
+            padding: 15px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: #f4f4f4;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 5px 0;
+            display: inline-block;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00;
+            text-decoration: underline;
+        }
+
+        /* Seção Home */
+        #home {
+            background-color: #121212;
+            color: #f4f4f4;
+            padding: 100px 20px;
+            text-align: center;
+            border-bottom: 2px solid #444;
+        }
+
+        #home .intro h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        #home .intro p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        #home .btn {
+            background-color: #ffcc00;
+            color: #121212;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        #home .btn:hover {
+            background-color: #ffaa00;
+        }
+
+        /* Seção Bibliografia */
+        #about {
+            padding: 80px 20px;
+            text-align: center;
+            background-color: #1a1a1a;
+            color: #f4f4f4;
+            border-bottom: 2px solid #444;
+        }
+
+        #about h2 {
+            font-size: 32px;
+            margin-bottom: 40px;
+            color: #ffcc00;
+        }
+
+        .bio p {
+            font-size: 18px;
+            margin: 15px 0;
+            line-height: 1.6;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .bio strong {
+            color: #ffcc00;
+        }
+
+        /* Seção de Contato */
+        #contact {
+            padding: 80px 20px;
+            background-color: #333;
+            color: #f4f4f4;
+            text-align: center;
+        }
+
+        #contact h2 {
+            font-size: 32px;
+            margin-bottom: 40px;
+            color: #ffcc00;
+        }
+
+        #contact form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #444;
+            background-color: #222;
+            color: #f4f4f4;
+            font-size: 16px;
+        }
+
+        form button {
+            background-color: #ffcc00;
+            color: #121212;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+
+        form button:hover {
+            background-color: #ffaa00;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1a1a1a;
+            color: #f4f4f4;
+            padding: 40px 20px;
+            text-align: center;
+            border-top: 2px solid #444;
+        }
+
+        footer .social-media a {
+            color: #f4f4f4;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        footer .social-media a:hover {
+            color: #ffcc00;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">Bibliografia</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="home">
+    <div class="intro">
+        <h1>Olá, eu sou João Vitor!</h1>
+        <p>Bem-vindo ao meu site pessoal! Aqui você vai conhecer um pouco mais sobre mim e meu trabalho.</p>
+        <a href="#about" class="btn">Saiba mais sobre minha bibliografia</a>
+    </div>
+</section>
+
+<section id="about">
+    <h2>Bibliografia</h2>
+    <div class="bio">
+        <p><strong>Nome:</strong> João Vitor</p>
+        <p><strong>Idade:</strong> 17 anos</p>
+        <p><strong>Cidade Natal:</strong> São Paulo</p>
+        <p><strong>Cunho Profissional:</strong> Freelancer</p>
+        <p><strong>Formação:</strong> Estudante de Desenvolvimento de Sistemas (Ensino Integral)</p>
+        <p>Estou aberto a novos trabalhos envolvendo a tecnologia, buscando sempre evoluir e aplicar minhas habilidades em programação e desenvolvimento. Se você tem um projeto ou necessidade, sinta-se à vontade para entrar em contato!</p>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contato</h2>
+    <form action="#" method="post" id="contact-form">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Mensagem:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit" class="btn">Enviar Mensagem</button>
+    </form>
+</section>
+
+<footer>
+    <div class="social-media">
+        <a href="https://www.linkedin.com/in/seu-perfil" target="_blank">LinkedIn</a>
+        <a href="https://github.com/seu-usuario" target="_blank">GitHub</a>
+        <a href="https://www.instagram.com/seu-usuario" target="_blank">Instagram</a>
+    </div>
+    <p>&copy; 2025 João Vitor. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
